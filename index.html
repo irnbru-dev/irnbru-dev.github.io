@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>skrollr - parallax scrolling for the masses</title>
+
+    <link href="fixed-positioning.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="bg1" data-0="background-position:50% 0px;" data-end="background-position:50% -10000px;"></div>
+<div id="bg2" data-0="background-position:50% 0px;" data-end="background-position:50% -9000px;"></div>
+<div id="bg3" data-0="background-position:50% 0px;" data-end="background-position:50% -8000px;"></div>
+<div id="bg4" data-0="background-position:50% 0px;" data-end="background-position:50% -7000px;"></div>
+<div id="bg5" data-0="background-position:50% 0px;" data-end="background-position:50% -6000px;"></div>
+<div id="bg6" data-0="background-position:50% 0px;" data-end="background-position:50% -5000px;"></div>
+<div id="bg7" data-0="background-position:50% 0px;" data-end="background-position:50% -4000px;"></div>
+<div id="bg8" data-0="background-position:50% 0px;" data-end="background-position:50% -3000px;"></div>
+<div id="bg9" data-0="background-position:50% 0px;" data-end="background-position:50% -2000px;"></div>
+<div id="bg10" data-0="background-position:50% 0px;" data-end="background-position:50% -1000px;"></div>
+
+<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);"></div>
+
+<div id="download" data-10000="" data-12000=''>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+</div>
+
+<script type="text/javascript" src="scrollr.min.js"></script>
+
+<script type="text/javascript">
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+</script>
+</body>
+
+</html>
